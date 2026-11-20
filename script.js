@@ -1,0 +1,1 @@
+function sendRequest(e){e.preventDefault();const data=new FormData(e.target);const vals=[...e.target.querySelectorAll('input,select,textarea')].map(x=>x.value).filter(Boolean);const msg='السلام عليكم، أريد طلب خدمة من شركة أبو رودينا.\n'+vals.join('\n');window.open('https://wa.me/966548781454?text='+encodeURIComponent(msg),'_blank');}
